@@ -1,0 +1,34 @@
+{
+  "name": "redoctor",
+  "version": "1.0.0",
+  "description": "Redis doctor for understanding how the memory is used in your Redis server",
+  "main": "index.js",
+  "preferGlobal": true,
+  "bin" : {
+    "redoctor" : "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "easy-table": "^1.1.0",
+    "ioredis": "^3.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimohq/Redoctor.git"
+  },
+  "keywords": [
+    "redis",
+    "doctor",
+    "memory"
+  ],
+  "author": "Zihua Li <lizihua@shimo.im>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shimohq/Redoctor/issues"
+  },
+  "homepage": "https://github.com/shimohq/Redoctor#readme"
+}
