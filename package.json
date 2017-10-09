@@ -4,17 +4,19 @@
   "description": "Redis doctor for understanding how the memory is used in your Redis server",
   "main": "index.js",
   "preferGlobal": true,
-  "bin" : {
-    "redoctor" : "./index.js"
+  "bin": {
+    "redoctor": "./index.js"
   },
   "dependencies": {
     "commander": "^2.11.0",
     "easy-table": "^1.1.0",
     "ioredis": "^3.1.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "randomjs": "1.0.1"
+  },
   "scripts": {
-    "test": "exit 0"
+    "test": "node test"
   },
   "repository": {
     "type": "git",

@@ -10,6 +10,7 @@ program
   .option('-a, --auth [auth]', 'redis password')
   .option('--scan-pattern [pattern]', 'filter keys by pattern')
   .option('--strip-pattern [pattern]', 'strip key name by pattern')
+  .option('-c, --count [count]', 'scan count per time, default: 100', '100')
   .option('-t, --task [task]', 'task [memory]', 'memory')
   .option('--aliyun', 'Aliyun redis cluster compatible mode')
   .parse(process.argv);
