@@ -1,11 +1,11 @@
 {
   "name": "redoctor",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Redis doctor for understanding how the memory is used in your Redis server",
   "main": "index.js",
   "preferGlobal": true,
   "bin": {
-    "redoctor": "./index.js"
+    "redoctor": "bin/redoctor"
   },
   "dependencies": {
     "commander": "^2.11.0",

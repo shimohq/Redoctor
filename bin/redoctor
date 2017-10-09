@@ -1,7 +1,9 @@
-var Redis = require('ioredis')
-var program = require('commander')
-var package = require('./package.json')
-var tasks = require('./tasks')
+#!/usr/bin/env node
+
+const Redis = require('ioredis')
+const program = require('commander')
+const package = require('../package.json')
+const tasks = require('../tasks')
 
 program
   .version(package.version)
@@ -15,13 +17,13 @@ program
   .option('--aliyun', 'Aliyun redis cluster compatible mode')
   .parse(process.argv);
 
-var task = tasks[program.task]
+const task = tasks[program.task]
 
 if (!task) {
   throw new Error('No supported tasks: ' + program.task)
 }
 
-var redis = new Redis({
+const redis = new Redis({
   port: program.port && Number(program.port),
   host: program.host,
   password: program.auth
