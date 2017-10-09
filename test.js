@@ -15,7 +15,7 @@ const limit = 10000
     console.log(`set ${i}: ${key}`)
   }
 
-  execSync('node index --strip-pattern="[^:]*$" --count=1', {
+  execSync('node bin/redoctor --strip-pattern="[^:]*$" --count=1', {
     cwd: __dirname,
     stdio: 'inherit'
   })
