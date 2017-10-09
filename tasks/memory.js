@@ -63,7 +63,7 @@ function whileScan (args, tick) {
 }
 
 function scan (args) {
-  var params = [args.cursor || '0', 'COUNT', '100']
+  var params = [args.cursor || '0', 'COUNT', args.count]
   if (args.scanPattern) {
     params.push('MATCH', args.scanPattern)
   }
